@@ -1,0 +1,90 @@
+%opacity-zero {
+    opacity: 0;
+}
+
+%opacity-zero-five {
+    opacity: .5;
+}
+
+%opacity-one {
+    opacity: 1;
+}
+
+%enlarge {
+    transition: 0.5s;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+%text-center {
+    text-align: center;
+}
+
+%text-upper-center {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+%flex-row-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+%flex-row-nowrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+%flex-column-wrap {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+%flex-column-nowrap {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+%image-nrepeat-center-cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+%radios-five {
+    border-radius: 5px;
+}
+
+%relative {
+    position: relative;
+}
+
+%absolute {
+    position: absolute;
+}
+
+%link-to-text {
+    text-decoration: none;
+    color: rgb(39, 192, 197);
+}
+
+%btn-modern {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all ll 150ms ease-in-out;
+}
+
+%transparent {
+  background-color: transparent;
+}
+
+@mixin center-block ($w) {
+    width: $w;
+    margin-left: auto;
+    margin-right: auto;
+}

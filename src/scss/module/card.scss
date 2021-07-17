@@ -1,0 +1,73 @@
+@import '../_utils';
+$color-bg-black: rgb(10, 10, 10);
+$color-bg-params: rgb(40, 40, 60);
+
+
+.body__row {
+    margin: 10px auto;
+    background: $color-bg-black;
+    padding-bottom: 2em;
+    display: flex;
+    flex-flow: column wrap;
+
+    .body__params {
+        display: inline;
+        text-align: center;
+
+        input[type="number"] {
+            @extend .params__date;
+            width: 3.5em;
+            height: 2em;
+        }
+    
+        select {
+            @extend .params__date;
+            text-transform: uppercase;
+            height: 2em;           
+        }
+
+        .body__result {
+            @extend %radios-five;
+            width: 18em;
+            margin: auto;
+            background: rgb(10, 10, 10);
+            color: white;
+            padding: .8em;
+            border: 1px solid white;
+        }
+
+        .params__date {
+            @extend %radios-five;
+            background: $color-bg-params;
+            border: 1px solid white;
+            color:white;
+            font-weight: bold;
+            padding: .3em;
+            font-size: 1.1em;
+
+            &::-webkit-calendar-picker-indicator {
+                background-image: url('/public/images/icon/calendar.png')
+            }
+        }
+
+        .body__label {
+            display: inline-block;
+            width: 100%;
+            margin: 10px 0 20px 0;
+            font-size: 1.1em;
+            
+        }
+    }
+    
+}
+
+.center {
+    @include center-block(6em);
+    margin-top: 2em;
+
+    .card__button {
+        width: 6em;
+        padding: .5em;
+        margin-bottom: 1em;
+    }
+}

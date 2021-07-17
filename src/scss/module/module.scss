@@ -1,0 +1,84 @@
+@import '../_utils';
+$color-bg-black: #0d0d0d;
+$color-bg-white: rgb(245, 245, 245);
+$color-link-base: rgb(39, 192, 197);
+$color-link-hover:rgb(41, 235, 241);
+
+.bg--index {
+    @extend %image-nrepeat-center-cover;
+    background-image: url(/public/images/background/light-city640.jpg);
+}
+
+.title {
+    @extend %text-upper-center;
+    font-size: 1.2em;
+}
+
+.container__article {
+    @extend %radios-five,
+    %relative;
+    background: $color-bg-white;
+    color: $color-bg-black;
+    flex: 0 0 300px;
+    height: 22em;
+    margin: 1.5em;
+
+    &:hover {
+        background: rgb(30, 30, 30);
+        border: 1px solid white;
+        box-shadow: 2px 2px 5px white;
+        @extend %enlarge;
+
+        .container-img {
+            @extend %opacity-zero-five;
+        }
+
+        .container__article--plus {
+            @extend %opacity-one;
+        }
+    }
+}
+
+.container-img {
+    @extend %radios-five;
+    width: 100%;
+}
+
+.container__article--plus {
+    @extend %absolute,
+    %text-center;
+    padding: 10px;
+    top: 120px;
+    left: 25%;
+    right: 25%;
+}
+
+.content__title {
+    @extend %text-upper-center;
+    font-size: 1.3em;
+}
+
+.content__article {
+    margin: 3em 0 4em;
+
+    .title {
+        font-size: 1.2em;
+        text-align: left;
+    }
+}
+
+.article__text {
+    line-height: 1.4em;
+
+    &::first-letter {
+        font-size: 1.2em;
+    }
+}
+
+.footer__name {
+    margin: 0 0 0 1.2em;
+}
+
+.footer__copy {
+    margin: 0 1.2em 0 0;
+}

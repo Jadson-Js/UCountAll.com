@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="author" content="Jadson-Js">
+    <meta name="description"
+        content="See the most complete time unit converter on the internet, with a total of seventeen time unit options for you to convert from nanoseconds to millennia.">
+    <meta name="keywords"
+        content="converter, time units, time, nanosecond, days, years, conversion, measurements, how many, days, how many days there are">
+    <title>time converter</title>
+
+    <link rel="stylesheet" type="text/css" href="/public/css/base/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/public/css/layout/layout.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/layout/converter.css">
+
+    <link rel="stylesheet" type="text/css" href="/public/css/state/state.css">
+
+    <link rel="stylesheet" type="text/css" href="/public/css/module/header.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/module/module.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/module/card.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/module/converter.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/module/table.css">
+
+    <link rel="stylesheet" type="text/css" href="/public/css/response/screen664Convert.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/response/screen1056.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/response/screen1920.css">
+</head>
+
+<body>
+    <header class="l-header">
+        <nav class="header__top">
+            <a href="./index.html" class="header__logo">
+                UCountAll.com
+            </a>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="top__list">
+                <li class="list__item"><a class="active" href="./index.html">Home</a></li>
+                <li class="list__item"><a href="./converter.html">Converter</a></li>
+                <li class="list__item"><a href="./oneDate.html">Day counter</a></li>
+                <li class="list__item"><a href="./twoDate.html">Interval</a></li>
+                <li class="list__item"><a href="./holiday.html">Holiday</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__bottom bg--convert">
+            <h1 class="header__title">
+                Time Measures Converter.
+            </h1>
+        </div>
+    </header>
+
+    <main class="l-main">
+        <section class="l-card">
+            <h2 class="title is-font--big">To convert the units, fill in the boxes.</h2>
+
+            <div class="card__body">
+                <div class="body__row">
+                    <div class="body__params">
+                        <label class="body__label  is-decoration" for="quantityUnit">Input unit quantity:</label>
+                        <input type="number" name="quantityUnit" id="quantityUnit" min="1" value="1">
+                    </div>
+
+                    <div class="body__params">
+                        <label class="body__label  is-decoration" for="originalUnit">Input unit</label>
+                        <select id="originalUnit">
+                            <option value="">Choose input</option>
+                            <option value="nanosecond">Nanosecond</option>
+                            <option value="microsecond">Microsecond</option>
+                            <option value="millisecond">Millisecond</option>
+                            <option value="second">Second</option>
+                            <option value="minute">Minute</option>
+                            <option value="hour">Hour</option>
+                            <option value="day">Day</option>
+                            <option value="week">Week</option>
+                            <option value="fortnight">Fortnight</option>
+                            <option value="month">Month</option>
+                            <option value="bimester">Bimester</option>
+                            <option value="quarter">Quarter</option>
+                            <option value="semester">Semester</option>
+                            <option value="year">Year</option>
+                            <option value="decade">Decade</option>
+                            <option value="century">Century</option>
+                            <option value="milenium">Millennium</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="body__row">
+                    <div class="body__params">
+                        <label class="body__label is-decoration" for="resultUnit">Unit to which it will be converted</label>
+                        <select class="select" id="resultUnit">
+                            <option value="">Choose the output</option>
+                            <option value="nanosecond">Nanosecond</option>
+                            <option value="microsecond">Microsecond</option>
+                            <option value="millisecond">Millisecond</option>
+                            <option value="second">Second</option>
+                            <option value="minute">Minute</option>
+                            <option value="hour">Hour</option>
+                            <option value="day">Day</option>
+                            <option value="week">Week</option>
+                            <option value="fortnight">Fortnight</option>
+                            <option value="month">Month</option>
+                            <option value="bimester">Bimester</option>
+                            <option value="quarter">Quarter</option>
+                            <option value="semester">Semester</option>
+                            <option value="year">Year</option>
+                            <option value="decade">Decade</option>
+                            <option value="century">Century</option>
+                            <option value="milenium">Millennium</option>
+                        </select>
+                    </div>
+                    <div class="body__params">
+                        <p class="body__label is-decoration">Result:</p>
+                        <p class="body__result">Suggestion: How many weeks is 1 year old?</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center">
+                <button id="converterButton" class="card__button is-button is-link">See result</button>
+            </div>
+        </section>
+
+        <section class="l-content">
+            <h2 class="content__title">Learn more about time conversions</h2>
+
+            <article class="content__article">
+                <h3 class="title">Learn more about time conversions</h3>
+                <p class="article__text">
+                    <strong>The time converter</strong> works with the help of three parameters, and each one has a
+                    specific function,
+                    together they are responsible for converting the time measures.
+                </p>
+
+                <table class="article__table">
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>What it means</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td class="table__row--footer" colspan="2"><b>1 day</b> converted to <b>hours</b> equals <b>24 hours</b>.</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Input unit quantity:</td>
+                            <td>Indicates the measurement amount of the input unit.</td>
+                        </tr>
+                        <tr>
+                            <td>Input unit:</td>
+                            <td>It is the original unit of measure that will be converted later.</td>
+                        </tr>
+                        <tr>
+                            <td>Unit to which it will be converted:</td>
+                            <td>It will be the measure of time that the original will be transformed</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="article__text">
+                    <b>Example:</b> quantity: <b>[1]</b>, Input unit: <b>[day]</b>, output unit:
+                    <b>[hours]</b>.<br>
+                    <b>Meaning: </b> a day converted to hours.
+                </p>
+                <p class="article__text">
+                    <b>Example:</b> quantity: <b>[12]</b>, Input unit: <b>[hours]</b>, output unit:
+                    <b>[day]</b>.<br>
+                    <b>Meaning:</b> twelve hours converted to days.
+                </p>
+            </article>
+
+            <article class="content__article">
+                <h3 class="title">Functionalities</h3>
+                <p class="article__text">
+                    Welcome to the <strong>time unit conversion</strong> page, here you can convert miscellaneous time
+                    units easily and quickly, our list consists of a total of 17 measurements of time, such as
+                    microseconds, semesters, decades and so on. Our converter is the most complete of all internet,
+                    because with the vast list of time measurements and without any numerical limitation, enabling
+                    infinite numbers and results, the perfect time converter for any necessity.
+                </p>
+                <p class="article__text">
+                    time converter will allow several interactions as with a large list of units of time will greatly
+                    extend the use of the converter, questions like <strong> how many days is a fortnight, how many
+                        seconds is a month or how many months is a bimester </strong> will be answered quickly and
+                    simply, you just put the base time unit and the unit that the base will be transformed into.
+                </p>
+                <p class="article__text">
+                    The full freedom time converter to choose the relation of time measures that will be used to
+                    convert, this will make it unnecessary to worry about the conversion scales, meaning that
+                    conversions like <strong>hours converted to days or seconds converted to minutes,</strong> will have
+                    an answer but in fractions.
+                </p>
+                <ul>
+                    <li><a class="is-link" target="_blank"
+                            href="https://mundoeducacao.uol.com.br/matematica/unidades-medida-ao-longo-historia.htm">World
+                            Education</a>; History of Length Units. </li>
+                    <li><a class="is-link" target="_blank"
+                            href="https://www.turtlediary.com/lesson/converting-units-of-time.html">Turtlediary</a>;
+                        How about finding out how this converter works?</li>
+                    <li><a class="is-link" target="_blank"
+                            href="https://en.wikipedia.org/wiki/Unit_of_time">Wikipedia
+                            </a>; All about time measurements.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <a href="./index.html" class="footer__name is-link">
+            UCountAll.com
+        </a>
+        <p class="footer__copy">Copyright © 2021.</p>
+    </footer>
+
+    <script src="/public/js/bundle.js"></script>
+</body>
+
+</html>

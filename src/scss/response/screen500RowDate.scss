@@ -1,0 +1,9 @@
+@import '../_utils';
+
+@media screen and (min-width: 500px) {
+    .body__row {
+        @include center-block (60%);
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+}

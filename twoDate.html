@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="author" content="Jadson-Js">
+    <meta name="description"
+        content="The date range calculator will allow you to calculate the range of days between dates, thus revealing how many days there were between one date and another.">
+    <meta name="keywords"
+        content="Range of days, how many days there were, dates, days, how many, range, there were, time, years">
+    <title>Interval calculator</title>
+
+    <link rel="stylesheet" type="text/css" href="/public/css/base/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/public/css/layout/layout.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/layout/converter.css">
+
+    <link rel="stylesheet" type="text/css" href="/public/css/state/state.css">
+
+    <link rel="stylesheet" type="text/css" href="/public/css/module/header.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/module/module.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/module/card.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/module/twoDate.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/module/table.css">
+
+    <link rel="stylesheet" type="text/css" href="/public/css/response/screen1056.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/response/screen1920.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header__top">
+            <a href="./index.html" class="header__logo">
+                UCountAll.com
+            </a>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="top__list">
+                <li class="list__item"><a class="active" href="./index.html">Home</a></li>
+                <li class="list__item"><a href="./converter.html">Converter</a></li>
+                <li class="list__item"><a href="./oneDate.html">Day counter</a></li>
+                <li class="list__item"><a href="./twoDate.html">Interval</a></li>
+                <li class="list__item"><a href="./holiday.html">Holiday</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__bottom bg--twoDate">
+            <h1 class="header__title">
+                What is the range of days between two dates?
+            </h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="l-card">
+            <h2 class="title is-font--big">Choose two dates to calculate the range of days between them.</h2>
+
+            <form action="" method="GET" id="formTwo" class="card__body">
+                <div class="body__row">
+                    <div class="body__params">
+                        <label class="body__label is-font--big  is-decoration" for="inputDate">Initial date:</label>
+                        <input type="date" class="params__date initalDate" required>
+                    </div>
+                </div>
+
+                <div class="body__row">
+                    <div class="body__params">
+                        <label class="body__label is-font--big  is-decoration" for="inputDate">Final date:</label>
+                        <input type="date" class="params__date finalDate" required>
+                    </div>
+                </div>
+
+                <div class="body__row">
+                    <div class="body__params">
+                        <p class="body__label is-decoration">Result: </p>
+                        <p class="body__result">
+                            Suggestion: How many days did World War II last?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <button type="submit" class="card__button is-button is-link">See result</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="l-content">
+            <h2 class="content__title">Learn more about the interval calculator</h2>
+            <article class="content__article">
+                <h3 class="title">How to calculate how many days there were between two dates?</h3>
+                <p class="article__text">The tool has two elements and these are the ways to use it:</p>
+
+
+                <table class="article__table">
+                    <thead>
+                        <tr>
+                            <th>Term</th>
+                            <th>What does it mean</th>
+                            <th>Example</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td class="table__row--footer" colspan="3">Between <b>
+                                <time datetime="2001-01-01">january 01,
+                                        2001</time>
+                            </b> and <b>
+                                <time datetime="2002-02-02">February 02, 2002</time>
+                            </b> there will
+                                be an interval of <b>397 days</b>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Initial date:</td>
+                            <td>This is the starting point from which the range of days will be calculated.</td>
+                            <td><time datetime="2001-01-01">january 01,
+                                2001</time></td>
+                        </tr>
+                        <tr>
+                            <td>Final date:</td>
+                            <td>This is the date that will end with the count of days between the dates.</td>
+                            <td><time datetime="2002-02-02">February 02, 2002</time></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article class="content__article">
+                <h3 class="title">How many days have I lived?</h3>
+
+                <p class="article__text">
+                    Welcome to <strong>date range calculator</strong>, This tool was made for you calculate <strong>day
+                        ranges between any date</strong>, the calculator will offer a total freedom of choice to you, ie
+                    it is not necessary to limit yourself to modern dates only. The calculator does not have any limit
+                    on the amount of the range, date ranges with 10, 100, 2000 or 999... years will all be possible.
+                </p>
+
+                <p class="article__text">
+                    Choosing <strong>two dates</strong> I will enter the <strong>range of days</strong> between them,
+                    the dates must be filled with day, month and year, there is no numerical limitation this will allow
+                    infinite combinations and results. Use the date range calculator to find out more about your
+                    timeline and that of the world.
+                </p>
+
+                <p class="article__text">
+                    Questions like <strong>how many days are left until my 18th birthday</strong>, <strong>how many days
+                        I've already lived</strong>, <strong> how many days I spent at school </strong>, <strong>how
+                        many days are left until my vacation</strong> and etc. may be revealed, no only that but
+                    anything and any kind of day range you can think of can be answered using this interval calculator,
+                    just knowing the date it started and the date it ended, it will be possible figured out the
+                    <strong>interval of days between them.</strong>
+                </p>
+
+                <ul class="article__text">
+                    <li><a class="is-link" target="_blank"
+                            href="https://www.todamateria.com.br/historia-e-origem-do-calendario/">All matter</a>; Discover stories from the most important calendars in world history.
+                    </li>
+                    <li><a class="is-link" target="_blank"
+                        href="https://www.history.com/topics/china/china-timeline">History</a>; Discover the main things that happened in the history of china.</li>
+                <li><a class="is-link" target="_blank"
+                        href="https://www.britannica.com/topic/history-of-United-States">Britannica</a>;
+                    Understand the timeline of the U.S.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer class="l-footer">
+        <a href="./index.html" class="footer__name is-link">
+            UCountAll.com
+        </a>
+        <p class="footer__copy">Copyright © 2021.</p>
+    </footer>
+
+    <script src="/public/js/bundle.js"></script>
+</body>
+
+</html>

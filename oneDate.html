@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="author" content="Jadson-Js">
+    <meta name="description"
+        content="Day counter to calculate how many days are left or have passed in relation to any chosen date, resulting in the range of days between today and the date.">
+    <meta name="keywords"
+        content="interval between dates, day count, interval calculator, days, dates, intervals, how many days have passed, days left">
+    <title>day counter</title>
+
+    <link rel="stylesheet" type="text/css" href="/public/css/base/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/public/css/layout/layout.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/layout/converter.css">
+
+    <link rel="stylesheet" type="text/css" href="/public/css/state/state.css">
+
+    <link rel="stylesheet" type="text/css" href="/public/css/module/header.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/module/module.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/module/card.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/module/oneDate.css">
+
+    <link rel="stylesheet" type="text/css" href="/public/css/response/screen1056.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/response/screen1920.css">
+</head>
+
+<body>
+    <header class="l-header">
+        <nav class="header__top">
+            <a href="./index.html" class="header__logo">
+                UCountAll.com
+            </a>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="top__list">
+                <li class="list__item"><a class="active" href="./index.html">Home</a></li>
+                <li class="list__item"><a href="./converter.html">Converter</a></li>
+                <li class="list__item"><a href="./oneDate.html">Day counter</a></li>
+                <li class="list__item"><a href="./twoDate.html">Interval</a></li>
+                <li class="list__item"><a href="./holiday.html">Holiday</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__bottom bg--oneDate">
+            <h1 class="header__title">
+                How many days to go?
+            </h1>
+        </div>
+    </header>
+
+    <main class="l-main">
+        <section class="l-card">
+            <h2 class="title is-font--big">Choose a date and calculate how many days there are between it and today.
+            </h2>
+
+            <form action="" method="GET" class="card__body" id="formOne">
+                <div class="body__row">
+                    <div class="body__params">
+                        <label class="body__label is-font--big  is-decoration" for="inputDate">Special date</label>
+                        <input type="date" class="params__date finalDate" required>
+                    </div>
+                </div>
+
+                <div class="body__row">
+                    <div class="body__params">
+                        <p class="body__label is-decoration">Result:</p>
+                        <p class="body__result">
+                            Suggestion: How many days have I lived?
+                        </p>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <button type="submit" class="card__button is-button is-link">See result</button>
+                    <input type="hidden" id="formTwo">
+                </div>
+            </form>
+        </section>
+
+        <section class="l-content">
+            <h2 class="content__title">Learn more about the day counter</h2>
+            <article class="content__article">
+                <h3 class="title">How to know how many days are left or have passed a date until today ?</h3>
+                <p class="article__text">Fill in the boxes as a special date by putting day, month and year
+                    respectively.</p>
+                <ul class="article__text">
+                    <li>
+                        <b>Example:</b> <time datetime="1822-09-07">September 07, 1822</time> - <b>Result:</b> The day
+                        counter will reveal how many there were
+                        since
+                        independence from Brazil until today.
+                    </li>
+                    <li><b>Example:</b> <time datetime="2023-03-8">March 8, 2023</time> - <b>Result:</b> The counter
+                        will reveal how many days are left before mine
+                        18th birthday
+                    </li>
+                </ul>
+            </article>
+            <article class="content__article">
+                <h3 class="title">Features</h3>
+                <p class="article__text">
+                    Welcome to the <strong>count days</strong> page, in this tool it will be
+                    possible to count that <strong> days left to a date </strong> or <strong>how many days have passed
+                        from that date until today.</strong> to find out <strong> how many days are left or if They
+                        passed </strong> just enter the date on which the days will be calculated, the tool is quick and
+                    easy to use.
+                </p>
+
+                <p class="article__text">
+                    Unlike the <strong>date range calculator</strong> page, this page is not
+                    needed by the start date, as it is already filled in with the current date automatically, making the
+                    tool to know <strong>how many days are left or have passed</strong> much more practical and easier
+                    to use. So putting a date for example, the date of your birth it will give how many days there were
+                    from that day until today, or that is, <strong>how many days have I lived</strong> and putting the
+                    date of your <strong>birthday of 18 years</strong>, it will give <strong>how many days left for my
+                        18th birthday</strong>.
+                </p>
+
+                <p class="article__text">
+                    The tool will give the exact days for arrival of that date or how many days have passed from this
+                    date until today , ps: the tool has no numerical limit this means that there will not be a limit on
+                    the number of days that there will be of this calculation. interesting examples to use: <strong> how
+                        many days left for my 18th birthday </strong>, <strong>how many days have I lived</strong>,
+                    <strong> how long has it been since the abolition of slavery <time datetime="1863-01-10">(January
+                            10, 1863)</time> </strong>, <strong> how many days have passed since the end of the Trump
+                        term <time datetime="2021-01-20">(January 20, 2021)</time> </strong>, <strong>how many days have
+                        passed since the independence of the USA <time datetime="1776-07-4">(July
+                            4/1776)</time>.</strong>
+                </p>
+
+                <ul class="article__text">
+                    <li><a class="is-link" target="_blank"
+                            href="https://epocanegocios.globo.com/Caminhos-para-o-futuro/Desenvolvimento/noticia/2016/02/10-tecnologias-que-iremos-usar-ate-2025.html">Era
+                            & Business</a>; 10 technologies we will use by 2025</li>
+                    <li><a class="is-link" target="_blank"
+                            href="https://www.historiadobrasil.net/resumos/datas_importantes.htm">History of
+                            Brasil</a>; Things that happened in Brasil that you should know about.</li>
+                    <li><a class="is-link" target="_blank"
+                            href="https://en.wikipedia.org/wiki/World_history#:~:text=World%20history%20or%20global%20history,history%20from%20a%20global%20perspective.&text=It%20is%20not%20to%20be,so%20on%20a%20global%20scale.">Wikipedia</a>;
+                            Understand the timeline of human history</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer class="l-footer">
+        <a href="./index.html" class="footer__name is-link">
+            UCountAll.com
+        </a>
+        <p class="footer__copy">Copyright © 2021.</p>
+    </footer>
+
+    <script src="/public/js/bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+@import '../_utils';
+
+.bg--oneDate {
+    background: black;
+    background-image: url(/public/images/background/sea-moon640.jpg);
+    background-position: 20% 20%;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.body__row {
+    max-width: 25em;
+}

@@ -1,0 +1,35 @@
+@import '../_utils';
+
+
+@media screen and (min-width: 1056px) {
+    .bg--index {
+        background-image: url(/public/images/background/light-city1280.jpg);
+    }
+
+    .bg--convert {
+        background-image: url(/public/images/background/post-clock1280.jpg);
+        background-position: 50% 60%;
+        background-size: cover;
+    }
+
+    .bg--oneDate {
+        background-image: url(/public/images/background/sea-moon1280.jpg);
+    }
+
+    .bg--twoDate {
+        background-image: url(/public/images/background/train-city1280.jpg);
+    }
+
+    .bg--holiday {
+        background-image: url(/public/images/background/cat-moon1280.jpg);
+    }
+
+    .container__article {
+        flex: 0 0 20%;
+    }
+
+    .l-content {
+        @include center-block (97%);
+        margin-top: 2em;
+    }
+}

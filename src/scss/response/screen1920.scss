@@ -1,0 +1,36 @@
+@import '../_utils';
+
+@media screen and (min-width: 1920px) {
+    body {
+        font-size: 1.8em;
+    }
+    
+    .bg--index {
+        background-image: url(/public/images/background/xangai-city1920.jpg);
+    }
+
+    .bg--convert {
+        background-image: url(/public/images/background/post-clock1920.jpg);
+    }
+
+    .bg--oneDate {
+        background-image: url(/public/images/background/sea-moon1920.jpg);
+    }
+
+    .bg--twoDate {
+        background-image: url(/public/images/background/train-city1920.jpg);
+    }
+
+    .bg--holiday {
+        background-image: url(/public/images/background/cat-moon1920.jpg);
+    }
+
+    .container__article { 
+        flex: 0 0 20%;
+    } 
+
+    .l-content {
+        @include center-block (98%);
+        margin-top: 5%;
+      }
+}   

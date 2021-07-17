@@ -1,0 +1,26 @@
+@import '../_utils';
+$color-bg-black: #0d0d0d;
+
+.bg--twoDate {
+    background: black;
+    background-image: url(/public/images/background/statue-art640.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body__row {
+    max-width: 25em;
+
+    .body__params {
+        display: inline;
+        text-align: center;
+
+        #initalDay, #finalDay {
+            width: 2.9em;
+        }
+
+        #initalYear, #finalYear {
+            width: 3.8em;
+        }
+    }
+}

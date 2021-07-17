@@ -1,0 +1,17 @@
+@import '../_utils';
+
+@media screen and (min-width: 664px) {
+    .body__row {
+        @include center-block (60%);
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        
+        .body__params {
+            flex: 0 0 50%;
+
+            .body__result {
+                width: 90% ;
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import '../_utils';
+$color-bg-black: #0d0d0d;
+
+.l-header {
+    position: relative;
+}
+
+.l-main {
+    position: relative;
+    margin: 2em auto 2em;
+}
+
+.l-nav {
+    @extend %text-center;
+    margin: 2% auto 2%;
+}
+
+.l-container {
+    @extend %flex-row-wrap;
+    justify-content: space-evenly;
+    align-items: flex-start
+}
+
+.l-content {
+    @include center-block (95%);
+    margin-top: 3em;
+}
+
+.l-footer {
+    @extend %flex-row-nowrap;
+    height: 5em;
+    background: $color-bg-black;
+    align-items: center;
+    justify-content: space-between;
+}

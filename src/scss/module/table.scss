@@ -1,0 +1,13 @@
+.article__table {
+    border-collapse: collapse;
+    margin: 3em auto;
+    
+    tr, th, td{
+        border: 1px solid white;
+        padding: 1em;
+    }
+
+    .table__row--footer {
+        text-align: center;
+    }
+}

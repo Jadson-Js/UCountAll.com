@@ -1,0 +1,9 @@
+@import '../_utils';
+
+.bg--holiday {
+    background: black;
+    background-image: url(/public/images/background/cat-moon640.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
