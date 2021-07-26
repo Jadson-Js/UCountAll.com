@@ -21,4 +21,5 @@ gulp.task('watch', function () {
 });
 
 // npm i gulp gulp-clean-css gulp-watch sass gulp-sass --save-dev
-// nos intervalo, por a opção de escolher o resultado em outras medidas de tempo
+// npm i @babel/preset-env @babel/core @babel/preset-react babel-core babel-loader babel-preset-react css-loader gulp
+// npm i gulp-clean-css gulp-sass gulp-watch html-webpack-plugin sass style-loader url-loader webpack webpack-cli
