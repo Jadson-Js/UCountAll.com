@@ -69,9 +69,9 @@ export default class Central {
         const datetimeF = `<time datetime="${dateValue[5]}-${dateValue[4]}-${dateValue[3]}">${month[dateValue[4] - 1]} ${dateValue[3]}, ${dateValue[5]}</time>`
         
         const zero = `Ehhh... I think the range between <b>${datetimeI}</b> and <b>${datetimeF}</b> It can only be humm... mandarin ?`
-        const positive = `between today <b>${datetimeI}</b> and <b>${datetimeF}</b> there is a  <b>${interval}</b> days gap.`
-        const negative = `between today <b>${datetimeF}</b> and <b>${datetimeI}</b> there is a  <b>${interval}</b> days gap.`
-        const neutre = `Between <b>${datetimeI}</b> and <b>${datetimeF}</b> there will be an interval of <b>${interval}</b> days.`
+        const positive = `between today <b>${datetimeI}</b> and <b>${datetimeF}</b> there is a  <b>${interval} days</b> gap.`
+        const negative = `between today <b>${datetimeF}</b> and <b>${datetimeI}</b> there is a  <b>${interval} days </b> gap.`
+        const neutre = `Between <b>${datetimeI}</b> and <b>${datetimeF}</b> there will be an interval of <b>${interval} days.</b>`
 
         if (interval == 0) {
             res.innerHTML = zero
