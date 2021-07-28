@@ -16,7 +16,7 @@ export default function formula(originalUnit, quantityUnit, resultUnit) {
         }
         //
         if (quantityUnit == 1) return `<b>${quantityUnit} ${originalUnit}</b> converted to <b>${resultUnit}s</b> is equal to <b> ${Math.round(produtoNumerado)} ${resultUnit}s.</b>`
-        return `<b>${quantityUnit} ${originalUnit}s</b> conprodutoNumeradoverted to <b>${resultUnit}s</b> is equal to <b> ${Math.round(produtoNumerado)} ${resultUnit }s.</b>`
+        return `<b>${quantityUnit} ${originalUnit}s</b> converted to <b>${resultUnit}s</b> is equal to <b> ${Math.round(produtoNumerado)} ${resultUnit }s.</b>`
     } else {
         produtoNumerado = produtoNumerado / (conversorNumerado * quantityUnit)
 
